@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Case Report</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e2f;
+            color: #f4f4f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #2c2c3b;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            color: #ffffff;
+        }
+        
+        /* Header */
+        h1 {
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff6b6b;
+        }
+        
+        /* Summary Info */
+        p {
+            font-size: 1.1em;
+            margin: 8px 0;
+            color: #d4d4dc;
+        }
+        p strong {
+            color: #ff6b6b;
+        }
+        
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #444454;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            color: #e0e0e6;
+        }
+        th {
+            background-color: #3c3c4f;
+            color: #ff6b6b;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #2e2e3f;
+        }
+        
+        /* Error List Styling */
+        h2 {
+            margin-top: 24px;
+            font-size: 1.4em;
+            color: #ff6b6b;
+        }
+        ul {
+            margin-top: 10px;
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #e0e0e6;
+        }
+        ul li {
+            margin: 6px 0;
+        }
+
+        /* Button Styling */
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff6b6b;
+            color: #fff;
+            text-align: center;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e55a5a;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test Case Report</h1>
+        
+        <p><strong>PR Number:</strong> <span id="prNumber">#123</span></p>
+        <p><strong>Total Test Cases:</strong> <span id="totalTests">100</span></p>
+        <p><strong>Total Passed:</strong> <span id="totalPassed">90</span></p>
+        <p><strong>Total Failed:</strong> <span id="totalFailed">10</span></p>
+        
+        <h2>Errors Generated</h2>
+        <ul id="errorList">
+            <li>Error in test case: Null pointer exception</li>
+            <li>Error in test case: Index out of bounds</li>
+        </ul>
+
+        <h2>Failed Test Cases</h2>
+        <table>
+            <tr>
+                <th>Function Name</th>
+                <th>Error Message</th>
+            </tr>
+            <tr>
+                <td>functionA</td>
+                <td>Expected true but got false</td>
+            </tr>
+            <tr>
+                <td>functionB</td>
+                <td>Timeout error</td>
+            </tr>
+        </table>
+
+        <a href="#" class="button">Download Report</a>
+    </div>
+</body>
+</html>
